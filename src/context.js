@@ -61,7 +61,6 @@ const AppProvider = ({ children }) => {
     setIndex((oldIndex) => {
       if (index >= questions.length - 1) {
         setModalOpen(true);
-        setCorrect(0);
         return 0;
       } else return oldIndex + 1;
     });
